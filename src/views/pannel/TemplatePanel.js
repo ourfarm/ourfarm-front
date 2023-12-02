@@ -1,4 +1,3 @@
-import Button from '@enact/sandstone/Button';
 import kind from '@enact/core/kind';
 import { Panel, Header } from '@enact/sandstone/Panels';
 import { TabLayout, Tab } from '@enact/sandstone/TabLayout';
@@ -23,32 +22,18 @@ const TemplatePanel = kind({
 				orientation="vertical"
 				tabSize={null}
 			>
-				<Tab
-					icon="controller" title="test"
-				>
-					<Button icon="demosync">
-						Button 1
-					</Button>
-					<Button icon="demosync">
-						Button 2
-					</Button>
-					<Button icon="demosync">
-						Button 3
-					</Button>
-					<Button icon="demosync">
-						Button 4
-					</Button>
-					<Button icon="demosync">
-						Button 5
-					</Button>
+				<Tab icon="home" title="Home">
+					<Home></Home>
 				</Tab>
-				<Home icon="home" title="Home" />
-				<Status icon="dashboard1" title="Status" />
 				<Tab icon="dashboard1" title="Status">
 					<Status></Status>
 				</Tab>
-				<Control icon="controller" title="Control" />
-				<Setting icon="gear" title="Setting" />
+				<Tab icon="controller" title="Control">
+					<Control></Control>
+				</Tab>
+				<Tab icon="gear" title="Setting">
+					<Setting></Setting>
+				</Tab>
 			</TabLayout>
 		</Panel>
 	)
