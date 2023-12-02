@@ -10,13 +10,11 @@ const Status = kind({
 	name: 'Status',
 
 	render: (props) => (
-		<Tab
-			{...props}
-		>
+		<>
 			<Item slotBefore={<Icon>playcircle</Icon>}>
 				Single Item
 			</Item>
-		</Tab>
+		</>
 	)
 });
 

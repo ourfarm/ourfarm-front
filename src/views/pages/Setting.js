@@ -10,9 +10,8 @@ const Setting = kind({
 	name: 'Setting',
 
 	render: (props) => (
-		<Tab {...props}
-		>
-		</Tab>
+		<>
+		</>
 	)
 });
 

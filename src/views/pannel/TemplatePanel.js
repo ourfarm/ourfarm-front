@@ -1,12 +1,11 @@
-import Button from '@enact/sandstone/Button';
 import kind from '@enact/core/kind';
 import { Panel, Header } from '@enact/sandstone/Panels';
 import { TabLayout, Tab } from '@enact/sandstone/TabLayout';
 
-import { Home } from '../pages/Home'
-import { Status } from '../pages/Status'
-import { Control } from '../pages/Control'
-import { Setting } from '../pages/Setting'
+import Home from '../pages/Home';
+import Status from '../pages/Status';
+import Control from '../pages/Control';
+import Setting from '../pages/Setting';
 
 const TemplatePanel = kind({
 	name: 'TemplatePanel',
@@ -23,10 +22,18 @@ const TemplatePanel = kind({
 				orientation="vertical"
 				tabSize={null}
 			>
-				<Home icon="home" title="Home" />
-				<Status icon="dashboard1" title="Status" />
-				<Control icon="controller" title="Control" />
-				<Setting icon="gear" title="Setting" />
+				<Tab icon="home" title="Home">
+					<Home></Home>
+				</Tab>
+				<Tab icon="dashboard1" title="Status">
+					<Status></Status>
+				</Tab>
+				<Tab icon="controller" title="Control">
+					<Control></Control>
+				</Tab>
+				<Tab icon="gear" title="Setting">
+					<Setting></Setting>
+				</Tab>
 			</TabLayout>
 		</Panel>
 	)
