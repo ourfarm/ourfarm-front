@@ -5,230 +5,25 @@ import { ImageItem } from '@enact/sandstone/ImageItem'
 const Home = kind({
 	name: 'Home',
 
+	
+
 	render: (props) => (
 		<>
-			<Skinnable>
 				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
+					orientation="vertical"
+					src={{
+						fhd: 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 300\' width=\'300\' height=\'300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%237ed31d\'%3E%3C/rect%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'36px\' fill=\'%23ffffff\'%3E300 X 300%3C/text%3E%3C/svg%3E',
+						hd: 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 200\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%237ed31d\'%3E%3C/rect%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'36px\' fill=\'%23ffffff\'%3E200 X 200%3C/text%3E%3C/svg%3E',
+						uhd: 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 600\' width=\'600\' height=\'600\'%3E%3Crect width=\'600\' height=\'600\' fill=\'%237ed31d\'%3E%3C/rect%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'36px\' fill=\'%23ffffff\'%3E600 X 600%3C/text%3E%3C/svg%3E'
+					}}
 					style={{
-						height: '12.25rem',
-						width: '16rem'
+						height: '30rem',
+						position: 'absolute',
+						width: '20rem'
 					}}
 				>
-					ImageItem 1
 				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 2
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 3
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 4
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 5
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 6
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 7
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 8
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 9
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 10
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 11
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 12
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 13
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 14
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 15
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 16
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 17
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 18
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 19
-				</ImageItem>
-				<ImageItem
-					inline
-					label="ImageItem label"
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' width='360' height='240'%3E%3Crect width='360' height='240' fill='%23d8d8d8'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36px' fill='%236e6e6e'%3E360 X 240%3C/text%3E%3C/svg%3E"
-					style={{
-						height: '12.25rem',
-						width: '16rem'
-					}}
-				>
-					ImageItem 20
-				</ImageItem>
-			</Skinnable>
+
 		</>
 	)
 });
