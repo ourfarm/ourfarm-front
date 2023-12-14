@@ -1,4 +1,6 @@
 import kind from '@enact/core/kind';
+import SwitchItem from '@enact/sandstone/SwitchItem'
+import Item from '@enact/sandstone/Item'
 
 import Button from '@enact/sandstone/Button';
 
@@ -7,21 +9,14 @@ const Control = kind({
 
 	render: (props) => (
 		<>
-			<Button icon="demosync">
-				Button 1
-			</Button>
-			<Button icon="demosync">
-				Button 2
-			</Button>
-			<Button icon="demosync">
-				Button 3
-			</Button>
-			<Button icon="demosync">
-				Button 4
-			</Button>
-			<Button icon="demosync">
-				Button 5
-			</Button>
+			<SwitchItem
+				onToggle={function noRefCheck() { }}
+			>Auto Mode
+			</SwitchItem>
+			<SwitchItem
+				onToggle={function noRefCheck() { }}
+			>LED
+			</SwitchItem>
 		</>
 	)
 });
