@@ -1,5 +1,7 @@
 import kind from '@enact/core/kind';
 import SwitchItem from '@enact/sandstone/SwitchItem'
+import Item from '@enact/sandstone/Item'
+
 import Button from '@enact/sandstone/Button';
 
 const Control = kind({
@@ -9,23 +11,11 @@ const Control = kind({
 		<>
 			<SwitchItem
 				onToggle={function noRefCheck() { }}
-			>
-				Hello SwitchItem
+			>Auto Mode
 			</SwitchItem>
 			<SwitchItem
 				onToggle={function noRefCheck() { }}
-			>
-				Hello SwitchItem
-			</SwitchItem>
-			<SwitchItem
-				onToggle={function noRefCheck() { }}
-			>
-				Hello SwitchItem
-			</SwitchItem>
-			<SwitchItem
-				onToggle={function noRefCheck() { }}
-			>
-				Hello SwitchItem
+			>LED
 			</SwitchItem>
 		</>
 	)
